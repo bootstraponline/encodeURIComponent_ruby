@@ -31,6 +31,11 @@
 #   encodeURIComponent(componentString)
 #   string.charCodeAt(k)
 
+# component must be String
+def encodeURIComponent(componentString)
+  URI::URIEncodeComponent(componentString)
+end
+
 # define charCodeAt on String
 class String
   def charCodeAt(k)
@@ -165,7 +170,3 @@ def Encode(uri, unescape)
 end
 end # class << self
 end # module
-
-def encodeURIComponent(componentString)
-  URI::URIEncodeComponent(componentString)
-end
