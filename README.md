@@ -10,7 +10,7 @@ Based on `r11482` of V8's [SVN repository](https://code.google.com/p/v8/wiki/Sou
 * There's no other complete implementation of JavaScript's encodeURIComponent for Ruby that I'm aware of.
 * Based on the excellent V8 code used in Chrome.
 
-# Why not CGI.escape?
+# What about CGI.escape?
 
 CGI.escape is not the same as encodeURIComponent.
 
