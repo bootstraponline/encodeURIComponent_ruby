@@ -48,8 +48,8 @@ console.log( decodeURIComponent("+%7E%21%40%23%24%25%5E%26%2A%28%29%7B%7D%5B%5D%
 The reverse is not true. CGI.unescape seems to properly decode encodeURIComponent output.
 
 ```
-CGI.unescape("%20~!%40%23%24%25%5E%26*()%7B%7D%5B%5D%3D%3A%2F%2C%3B%3F%2B'%22%5C")
-=> " ~!@\#$%^&*(){}[]=:/,;?+'\"\\"
+puts CGI.unescape("%20~!%40%23%24%25%5E%26*()%7B%7D%5B%5D%3D%3A%2F%2C%3B%3F%2B'%22%5C")
+ ~!@#$%^&*(){}[]=:/,;?+'"\
 ```
 
 CGI even has differences between ruby versions.
